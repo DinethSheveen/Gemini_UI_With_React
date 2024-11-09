@@ -1,0 +1,115 @@
+.main{
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.main .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .nav img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.mainContainer{
+    max-width: 900px;
+    margin: auto;
+}
+
+.mainContainer .greeting{
+    margin: 50px 0px;
+    font-size: 56px;
+    color: rgb(181, 180, 180);
+    font-weight: 500;
+    padding: 20px;
+}
+
+.mainContainer .greeting span{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.main .card img{
+    width: 35px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+.main .card p{
+    font-size: 17px;
+    color: rgb(77, 77, 77);
+}
+
+.main .card:hover{
+    background-color: rgb(212, 208, 208);
+}
+
+.mainBottom{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.searchBox img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.searchBox input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.searchBox div{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.bottomInfo{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
